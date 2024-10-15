@@ -1,0 +1,125 @@
+.team {
+    /* background-color: #f5f5f5; */
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 3rem !important;
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 1rem;
+}
+
+.team-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    gap: 200px;
+
+}
+
+.team-item {
+   
+        position: relative;
+        text-align: center;
+        background-color: #fff;
+    
+    
+   
+        padding-bottom: 1.5rem !important;
+    
+   
+        overflow: hidden !important;
+    
+}
+
+.team-item.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.team-item img {
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 300px;
+}
+
+.team-item h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.team-social {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.team-social li {
+    margin: 0 5px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #27AE60;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
+    border-radius: 28px;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.text-primary{
+    color: #27AE60;
+}
+
+
+  
+
+
+
+@media (min-width: 1200px) {
+    .teams-container {
+       
+            max-width: 1140px;
+            margin:0 auto;
+   
+    }
+    }
+
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .team-item {
+        min-width: 90%;
+        margin: 0px 5%;
+    }
+}
