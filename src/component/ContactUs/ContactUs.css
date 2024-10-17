@@ -1,16 +1,17 @@
 .contact-us{
 padding-top: 120px;
     padding-bottom: 120px;
-    padding-right: 100px;
-    padding-left: 100px;
+   
 }
 
 .contact-row{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    
 }
 .contact-col-6{
-    width: 50%;
+    width: 45%;
 }
 .herotext{
 padding-bottom: 1.5rem ;
@@ -23,7 +24,7 @@ padding-bottom: 1.5rem ;
     font-weight: 500;
     }
 .herotext h2 {
-    font-size: 46px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 55px;
 }

@@ -50,11 +50,11 @@ const Navbar = () => {
 
           <img src={logo} className="img-fluid" alt="white logo" />
           </div>
-          <h5>Proohit</h5>
+          <h5>PARUIT</h5>
         </div>
         <div className="navbar-brand black-logo">
           <img src={logo} className="img-fluid" alt="black logo" />
-          <h5>Proohit</h5>
+          <h5>PARUIT</h5>
         </div>
 
         <button
@@ -125,7 +125,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <span className="ps-3 d-none d-lg-block">
+          {/* <span className="ps-3 d-none d-lg-block">
             <a
               href="https://themeforest.net/item/this-one-one-page-responsive-website-template/7236268?ref=alia"
               className="btn btn-primary"
@@ -134,7 +134,7 @@ const Navbar = () => {
             >
               BUY NOW
             </a>
-          </span>
+          </span> */}
         </div>
       </div>
     </nav>

@@ -39,7 +39,7 @@ export default function Testimonialslider() {
       <div className={stylecss.testimonial}>
         <h6>TESTIMONIALS</h6>
         <h2>What Our Clients Say!</h2>
-        <h5>Blogging is a conversation, not a code.</h5>
+        <h5>We are proud to partner with farmers and agricultural businesses who trust us.</h5>
       </div>
  
       <Swiper

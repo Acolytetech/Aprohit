@@ -6,6 +6,7 @@ import image5 from '../../img/image (5).jpg';
 const Team = [
   {
     name: " PULKIT CHOUDHARY",
+    designation: "Director",
    
     image: image4,
     social: [
@@ -17,6 +18,7 @@ const Team = [
   },
   {
     name: "BHAGAT SINGH",
+    designation: "Director",
   
     image: image5,
     social: [
@@ -53,7 +55,7 @@ const TeamSection = () => {
             <div className="herotext text-center">
               <h6>MEET OUR TEAM!</h6>
               <h2>Your Partner in Smarter Cattle Management</h2>
-              <h5 className="pt-2">At Paruit, we are a group of passionate professionals committed to revolutionizing cattle field solutions.</h5>
+              <h5 className="pt-2">A group of cattle professionals committed to revolutionizing cattle field solutions.</h5>
             </div>
           </div>
         </div>
@@ -67,6 +69,7 @@ const TeamSection = () => {
               >
                 <img className="img-fluid mb-4" src={member.image} alt={member.name} />
                 <h5>{member.name}</h5>
+                <p>{member.designation}</p>
                 <span className="text-primary">{member.role}</span>
                 <ul className="team-social">
                   {member.social.map((social, idx) => (

@@ -2,29 +2,29 @@ import React, { useState } from 'react';
 import { IoLocationOutline, IoCallOutline, IoMailOpenOutline } from "react-icons/io5";
 import emailjs from 'emailjs-com'; // Import EmailJS
 import './ContactUs.css';
-
+ 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        website: '',
+        phone: '',
         comment: '',
     });
     const [message, setMessage] = useState('');
-
+ 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
-
+ 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // EmailJS configuration
-        const serviceID = 'service_rkvivfh';
-        const templateID = 'template_0xjo79r';
-        const userID = 'pi7HGACaR03yvY8LG';
-
+ 
+        // EmailJS configuration (ensure these values are correct)
+        const serviceID = 'service_4yijmf2';
+        const templateID = 'template_cvpt0us';
+        const userID = 'afq4Z-6cPPdO6KD9B';
+ 
         emailjs.send(serviceID, templateID, formData, userID)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
@@ -35,7 +35,7 @@ const ContactUs = () => {
                 setMessage('Failed to send your message. Please try again.');
             });
     };
-
+ 
     return (
         <section className="contact-us" id="contact">
             <div className="contact-container">
@@ -70,8 +70,8 @@ const ContactUs = () => {
                             </div>
                             <div className="detail">
                                 <div className="heading">Write Us</div>
-                                <a href="ppcpl2005@gmail.com " target="_blank" rel="noopener noreferrer">
-                                ppcpl2005@gmail.com 
+                                <a href="ppcpl2005@gmail.com" target="_blank" rel="noopener noreferrer">
+                                ppcpl2005@gmail.com
                                 </a>
                             </div>
                         </address>
@@ -93,6 +93,7 @@ const ContactUs = () => {
                                     required
                                 />
                             </div>
+                           
                             <div className="mb-3">
                                 <input
                                     type="email"
@@ -104,21 +105,22 @@ const ContactUs = () => {
                                     required
                                 />
                             </div>
-                            {/* <div className="mb-3">
+                            <div className="mb-3">
                                 <input
-                                    type="text"
+                                    type="Phone"
                                     className="form-control"
-                                    name="website"
-                                    placeholder="Enter your website"
-                                    value={formData.website}
+                                    name="phone"
+                                    placeholder="Phone *"
+                                    value={formData.phone}
                                     onChange={handleChange}
+                                    required
                                 />
-                            </div> */}
+                            </div>
                             <div className="mb-3">
                                 <textarea
                                     className="form-control"
                                     name="comment"
-                                    placeholder="Enter your message *"
+                                    placeholder="Enter your message "
                                     rows="3"
                                     value={formData.comment}
                                     onChange={handleChange}
@@ -134,5 +136,6 @@ const ContactUs = () => {
         </section>
     );
 };
-
+ 
 export default ContactUs;
+ 

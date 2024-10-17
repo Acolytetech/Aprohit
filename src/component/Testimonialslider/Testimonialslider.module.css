@@ -7,6 +7,7 @@
 }
 .testimonial h6{
     font-size: 16px;
+    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #27AE60;
@@ -16,6 +17,7 @@
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 10px;
+    letter-spacing: 0.1rem;
   
 }
 .testimonial h5{
@@ -62,7 +64,7 @@
 
 .slide_content {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .slide_content img {
@@ -79,8 +81,8 @@
     border-radius: 2px;
     box-shadow: 0px 0px 5px rgb(212, 211, 211);
     background-color: white;
-    padding: 50px;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .swiper_button_next, .swiper_button_prev {

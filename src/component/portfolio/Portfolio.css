@@ -1,13 +1,14 @@
 .Portfolio-bottom {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
     padding-top: 3rem;
 }
 
 .Portfolio-bottom-col-12 {
     flex: 0 0 auto;
     width: 100%;
+    text-transform: capitalize;
 }
 
 #options {
@@ -119,4 +120,136 @@
 
 .make4columns:hover .text-overlay {
     opacity: 1;
+}
+@media (max-width: 768px) {
+
+    .Portfolio-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 0rem;
+        padding-top: 3rem;
+    }
+    
+    .Portfolio-bottom-col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    
+    #options {
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    #options ul {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: block;
+        margin: auto;
+        line-height: 50px;
+    }
+    
+    #options ul li {
+        display: inline-block;
+        margin: 0 15px;
+        padding: 0;
+        
+    }
+    
+    #options ul li a.selected {
+        color: #27AE60;
+        text-decoration: none;
+        padding-bottom: 4px;
+    }
+    
+    #options ul li a {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #666666;
+        padding-bottom: 6px;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s;
+    }
+    
+    #options ul li a:hover {
+        color: #27AE60;
+    }
+    
+    .portfolio-bottom-container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        gap: 5px;
+        padding: 0 30px;
+    }
+    
+    .Portfolio-bottom-col-12 {
+        flex: 1 0 80px; /* Adjust the percentage for sizing */
+        margin-bottom: 0rem;
+        height:fit-content;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .make4columns {
+        position: relative;
+        overflow: hidden;
+        height: 200px;
+        
+    }
+    
+    .picture {
+        width: 100%;
+        height: 200px;
+        position: relative; /* Ensure the parent container is positioned */
+    }
+    
+    .picture img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: contain;
+        transition: transform 0.3s ease-in-out; /* Transition for scaling */
+        display: block; 
+        scale: 1.2;
+        
+    }
+    
+    .make4columns:hover img {
+        /* filter:contrast(0.9) ; */
+        /* filter: grayscale(100%); Add a grayscale effect */
+        transform: scale(1.1); /* Adjust the scale factor for a subtler zoom effect */
+    }
+    
+    .text-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* background: rgba(238, 238, 238, 0.5); */
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        width: 100%;
+        height: 100%; 
+        box-sizing: border-box; 
+        font-size: 32px;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 5px black;
+    }
+    
+    .make4columns:hover .text-overlay {
+        opacity: 1;
+    }
+    
+
+
 }

@@ -227,28 +227,31 @@ a.btn.btn-primary {
         width: 30px;
         height: 30px;
         border: none;
-        background-color: #27AE60;
-        padding: 0px;
+        background-color: black;
+        padding: 1px;
+        padding-bottom: 5px;
         display: block;
         justify-content: center;
         cursor: pointer;
     }
     
     .navbar-toggler-icon {
-        font-size: 25px;
+        font-size: 22px;
         color: white;
     }
     .navbar-collapse {
         /* flex-direction: column; */
         justify-content: center;
-        background-color: #27AE60;
+        background-color: rgba(24, 23, 23, 0.772);
         position: absolute;
         align-items: left;
-        top: 60px;
+        top: 40px;
         right: 0;
         width: 150px;
+        /* height: 80vh; */
         z-index: 1000;
-        border-radius: 0 0 10px 10px;
+        border-radius: 10px 0 10px 10px;
+        padding: 20px 0px 50px 0px;
     }
 
     .navbar-nav {
@@ -259,11 +262,12 @@ a.btn.btn-primary {
     .nav-link {
         padding: 10px;
         color: white;
+        font-size: 12px;
     }
 
     .nav-link:hover {
         color: #fff;
-        background-color: #1b8c4d;
+        background-color: #262827;
     }
 
     .btn.btn-primary {

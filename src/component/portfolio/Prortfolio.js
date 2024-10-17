@@ -105,11 +105,10 @@ const Portfolio = () => {
         <div className="row">
           <div className="col-12">
             <div className="herotext text-center">
-              <h6>Portfolio</h6>
-              <h2>Our Latest Projects</h2>
+              <h6>our products</h6>
+              <h2>Here are our latest products</h2>
               <h5 className="pt-2">
-                There are three responses to a piece of design – 
-                <br className="d-none d-md-block" />yes, no, and WOW! Wow is the one to aim for.
+              Now manage your farm with greater efficiency
               </h5>
             </div>
           </div>

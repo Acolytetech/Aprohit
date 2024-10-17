@@ -12,7 +12,7 @@ const Footer = () => {
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#services">SERVICES</a></li>
               <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#blog">BLOG</a></li>
+              <li><a href="#team">Teams</a></li>
               <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
