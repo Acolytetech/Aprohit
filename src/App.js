@@ -1,6 +1,6 @@
-// import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-// import Preloader from './component/preloader/Preloader';
+import Preloader from './component/preloader/Preloader';
 import Navbar from './component/navbar/Navbar';
 import Home from './component/Home/Home';
 import About from './component/About/About';
@@ -9,23 +9,36 @@ import Team from './component/teams/Teams';
 import ContactUs from './component/ContactUs/ContactUs';
 import Footer from './component/footer/Footer';
 import Testimonialslider from './component/Testimonialslider/Testimonialslider';
-// import Portfolio from './component/portfolio/Prortfolio';
-// import TeamMembers from './component/teams/TeamMembers';
+import Portfolio from './component/portfolio/Prortfolio';
+import 'animate.css';
+
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Adjust the time as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Preloader />;
+  }
+
   return (
     <div className="App">
-  {/* <Preloader/> */}
-  <Navbar/>
-  <Home/>
-  <About/>
-  <Services/>
-  {/* <Portfolio/> */}
-  {/* <TeamMembers/> */}
-  <Team/>
-  <Testimonialslider/>
-  <ContactUs/>
-  <Footer/>
+      <Navbar />
+      <Home />
+      <About />
+      <Services />
+      <Portfolio />
+      <Team />
+      <Testimonialslider />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }

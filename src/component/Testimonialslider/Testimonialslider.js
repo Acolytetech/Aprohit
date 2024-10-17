@@ -33,28 +33,28 @@ export default function Testimonialslider() {
   return (
     <>
       <div className={stylecss.testimonial}>
-        <p>TESTIMONIALS</p>
-        <h1>What Our Clients Say!</h1>
-        <p>Blogging is a conversation, not a code.</p>
+        <h6>TESTIMONIALS</h6>
+        <h2>What Our Clients Say!</h2>
+        <h5>Blogging is a conversation, not a code.</h5>
       </div>
 
       <Swiper
-        modules={[Autoplay, Pagination, Navigation]} // Add all required modules here
+        modules={[Autoplay, Pagination, Navigation]} 
         className={`mySwiper ${stylecss.swiper_container}`}
-        // slidesPerView={1.9}
+        
         spaceBetween={10}
         breakpoints={{
-          // when window width is <= 600px
+         
           768: {
             slidesPerView: 1,
             spaceBetween: 10
           },
-          // when window width is <= 900px
+        
           1024: {
             slidesPerView: 1.5,
             spaceBetween: 30
           },
-          // when window width is <= 1200px
+          
           1200: {
             slidesPerView: 1.9,
             spaceBetween: 30
@@ -65,7 +65,7 @@ export default function Testimonialslider() {
           delay: 5000,
           disableOnInteraction: false
         }}
-        loop={true} // Correct loop value
+        loop={true} 
         centeredSlides={true}
         navigation={{
           nextEl: `.${stylecss.swiper_button_next}`,

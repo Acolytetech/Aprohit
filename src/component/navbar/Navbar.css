@@ -55,10 +55,14 @@
 .navbar.scrolled {
     background-color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .navbar.scrolled .nav-link {
     color: black;
+}
+.navbar.scrolled .nav-link.active {
+    color:  #27AE60;
 }
 .navbar.scrolled .nav-link:hover,
 .navbar.scrolled .nav-link:active,
@@ -134,10 +138,17 @@ a {
     font-weight: 600;
     color: white;
 }
-.nav-link:active
+
+
+/* .nav-link:active
 .nav-link:hover {
     color: #27AE60;
+} */
+.nav-link.active {
+    color: #27AE60;
+    font-weight: bold;
 }
+  
 
 /* Button styles */
 a.btn.btn-primary {

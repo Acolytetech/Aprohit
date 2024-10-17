@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './teamMembers.css'; 
-import image4 from '../../img/4.jpg';
-import { PiGreaterThanLight } from 'react-icons/pi';
-import { PiLessThanLight } from 'react-icons/pi';
+import image4 from '../../img/image (4).jpg';
+import image5 from '../../img/image (5).jpg';
 
 const Team = [
   {
@@ -19,7 +18,7 @@ const Team = [
   {
     name: "John Doe",
     role: "Engineer Solutions",
-    image: image4,
+    image: image5,
     social: [
       { platform: "facebook", icon: "fab fa-facebook-f", link: "#" },
       { platform: "twitter", icon: "fab fa-twitter", link: "#" },

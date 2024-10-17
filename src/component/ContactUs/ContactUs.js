@@ -39,8 +39,8 @@ const ContactUs = () => {
                             </div>
                             <div className="detail">
                                 <div className="heading">Get Us Here</div>
-                                1355 Market St, Suite 900<br />
-                                San Francisco, CA 94<br />
+                                B 340 Kanta Khaturia Colony,<br />
+                                Bikaner Rajasthan, 334003, India<br />
                             </div>
                         </address>
                         <address className="clearfix d-flex align-items-center pb-2">
@@ -49,7 +49,7 @@ const ContactUs = () => {
                             </div>
                             <div className="detail">
                                 <div className="heading">Call Us</div>
-                                +1 123 456 7890
+                               +91 7597373091
                             </div>
                         </address>
                         <address className="clearfix d-flex align-items-center">
@@ -58,8 +58,8 @@ const ContactUs = () => {
                             </div>
                             <div className="detail">
                                 <div className="heading">Write Us</div>
-                                <a href="mailto:info@thisone.com" target="_blank" rel="noopener noreferrer">
-                                    info@thisone.com
+                                <a href="ppcpl2005@gmail.com " target="_blank" rel="noopener noreferrer">
+                                ppcpl2005@gmail.com 
                                 </a>
                             </div>
                         </address>
