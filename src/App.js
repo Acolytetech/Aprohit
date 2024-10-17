@@ -10,8 +10,7 @@ import ContactUs from './component/ContactUs/ContactUs';
 import Footer from './component/footer/Footer';
 import Testimonialslider from './component/Testimonialslider/Testimonialslider';
 import Portfolio from './component/portfolio/Prortfolio';
-import 'animate.css';
-
+// import Demo from/ './component/Demo/Demo';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,9 +34,11 @@ function App() {
       <About />
       <Services />
       <Portfolio />
+      {/* <Demo/> */}
       <Team />
       <Testimonialslider />
       <ContactUs />
+
       <Footer />
     </div>
   );

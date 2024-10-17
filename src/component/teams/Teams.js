@@ -5,8 +5,8 @@ import image5 from '../../img/image (5).jpg';
 
 const Team = [
   {
-    name: "Thomas Walker",
-    role: "Project Manager",
+    name: " PULKIT CHOUDHARY",
+   
     image: image4,
     social: [
       { platform: "facebook", icon: "fab fa-facebook-f", link: "#" },
@@ -16,8 +16,8 @@ const Team = [
     ],
   },
   {
-    name: "John Doe",
-    role: "Engineer Solutions",
+    name: "BHAGAT SINGH",
+  
     image: image5,
     social: [
       { platform: "facebook", icon: "fab fa-facebook-f", link: "#" },
@@ -52,8 +52,8 @@ const TeamSection = () => {
           <div className="col-12">
             <div className="herotext text-center">
               <h6>MEET OUR TEAM!</h6>
-              <h2>Minds Behind the Brain</h2>
-              <h5 className="pt-2">Alone we can do so little; together we can do so much.</h5>
+              <h2>Your Partner in Smarter Cattle Management</h2>
+              <h5 className="pt-2">At Paruit, we are a group of passionate professionals committed to revolutionizing cattle field solutions.</h5>
             </div>
           </div>
         </div>

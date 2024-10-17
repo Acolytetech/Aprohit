@@ -45,12 +45,17 @@ const Navbar = () => {
   return (
     <nav id="navigation" className={`navbar fixed-top ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container-fluid">
-        <p className="navbar-brand white-logo">
+        <div className="navbar-brand white-logo">
+          <div>
+
           <img src={logo} className="img-fluid" alt="white logo" />
-        </p>
-        <p className="navbar-brand black-logo">
+          </div>
+          <h5>Proohit</h5>
+        </div>
+        <div className="navbar-brand black-logo">
           <img src={logo} className="img-fluid" alt="black logo" />
-        </p>
+          <h5>Proohit</h5>
+        </div>
 
         <button
           className="navbar-toggler"
@@ -102,14 +107,14 @@ const Navbar = () => {
                 Team
               </p>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <p
                 className={`nav-link ${activeSection === 'blog' ? 'active' : ''}`}
                 onClick={() => document.getElementById('blog').scrollIntoView({ behavior: 'smooth' })}
               >
                 Blog
               </p>
-            </li>
+            </li> */}
             <li className="nav-item">
               <p
                 className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}

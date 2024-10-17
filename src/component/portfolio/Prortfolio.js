@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Portfolio.css';
+import { motion } from "framer-motion";
+
 import dorb1 from '../../img/dorb/dorb.jpg';
 import dorb2 from '../../img/dorb/dorb-2.jpg';
 import dorb3 from '../../img/dorb/dorb-3.jpg';
@@ -12,11 +14,11 @@ import domc3 from '../../img/Domc/domc_3.jpg';
 import rice1 from '../../img/Rice bran/Rice_bran.jpg';
 import rice2 from '../../img/Rice bran/Rice_bran-2.jpg';
 import rice3 from '../../img/Rice bran/Rice_bran-3.jpg';
-import rice4 from '../../img/Rice bran/Rice_bran-4.jpg';
-import maze1 from '../../img/Maize/maize.jpg';
+// import rice4 from '../../img/Rice bran/Rice_bran-4.jpg';
+import maze1 from '../../img/Maize/maize.png';
 import maze2 from '../../img/Maize/maize_2.jpg';
 import maze3 from '../../img/Maize/maize_3.jpg';
-import molas from '../../img/Molasses/molasses.jpg';
+// import molas from '../../img/Molasses/molasses.jpg';
 import molas1 from '../../img/Molasses/molasses-2.jpg';
 import molas2 from '../../img/Molasses/molasses-3.jpg';
 import 'animate.css';
@@ -49,6 +51,26 @@ const Portfolio = () => {
     { id: 17, category: 'category5', title: 'Project 17', description: 'mazel', img: maze3 },
     { id: 18, category: 'category6', title: 'Project 18', description: 'molas', img: molas2 },
   ];
+
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  };
+  
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
 
   // Filtered portfolio items
   const filteredItems = portfolioItems.filter((item) =>
@@ -164,13 +186,18 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-
+        <motion.ul
+    className="container"
+    variants={container}
+    initial="hidden"
+    animate="visible"
+  >
         <div className="portfolio-bottom-container row">
           {displayedItems.map((item) => (
              <div 
              key={item.id} 
-             className={`Portfolio-bottom-col-12 portfolio-item ${item.category} ${animate ? 'animate__animated animate__zoomIn' : ''}`}
-             style={{ animationDuration: '0.5s', animationTimingFunction: 'ease-in-out' }} // Smooth animation
+             className={`Portfolio-bottom-col-12 portfolio-item ${item.category} ${animate ? 'animate__animated animate__backInRight' : ''}`}
+             style={{ animationDuration: '0.1s', animationTimingFunction: 'ease-in-out' }} // Smooth animation
            >
               <div className="make4columns">
                 <div className="picture">
@@ -184,6 +211,7 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+        </motion.ul>
       </div>
     </section>
   );

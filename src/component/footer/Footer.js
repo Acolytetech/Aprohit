@@ -19,12 +19,12 @@ const Footer = () => {
         </div>
         <div className="footer-row footer-pading">
           <div className="footer-col-12">
-            <ul className="socialmedia">
+            {/* <ul className="socialmedia">
               <li><a href=""><FaTwitter /></a></li>
               <li><a href=""><FaFacebookF /></a></li>
               <li><a href=""><FaBehance /></a></li>
               <li><a href=""><FaDribbble /></a></li>
-            </ul>
+            </ul> */}
           </div>
         </div>
         <div className="footer-row pt-3 copyright">

@@ -64,7 +64,6 @@ const Home = () => {
                 onSwiper={setThumbsSwiper}
                 spaceBetween={10}
                 slidesPerView={3}
-                loop={true}
                 freeMode={true}
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}

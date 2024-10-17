@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { IoLocationOutline, IoCallOutline, IoMailOpenOutline } from "react-icons/io5";
+import emailjs from 'emailjs-com'; // Import EmailJS
 import './ContactUs.css';
 
 const ContactUs = () => {
@@ -18,10 +19,21 @@ const ContactUs = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // You can add your form processing logic here (e.g., sending data to the server)
-        console.log(formData);
-        setMessage('Your message has been sent!'); // Display success message
-        setFormData({ name: '', email: '', website: '', comment: '' }); // Reset form
+
+        // EmailJS configuration
+        const serviceID = 'service_rkvivfh';
+        const templateID = 'template_0xjo79r';
+        const userID = 'pi7HGACaR03yvY8LG';
+
+        emailjs.send(serviceID, templateID, formData, userID)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                setMessage('Your message has been sent!');
+                setFormData({ name: '', email: '', website: '', comment: '' }); // Reset form
+            }, (err) => {
+                console.log('FAILED...', err);
+                setMessage('Failed to send your message. Please try again.');
+            });
     };
 
     return (
@@ -45,7 +57,7 @@ const ContactUs = () => {
                         </address>
                         <address className="clearfix d-flex align-items-center pb-2">
                             <div className="icon">
-                                <IoCallOutline   />
+                                <IoCallOutline />
                             </div>
                             <div className="detail">
                                 <div className="heading">Call Us</div>
@@ -92,7 +104,7 @@ const ContactUs = () => {
                                     required
                                 />
                             </div>
-                            <div className="mb-3">
+                            {/* <div className="mb-3">
                                 <input
                                     type="text"
                                     className="form-control"
@@ -101,7 +113,7 @@ const ContactUs = () => {
                                     value={formData.website}
                                     onChange={handleChange}
                                 />
-                            </div>
+                            </div> */}
                             <div className="mb-3">
                                 <textarea
                                     className="form-control"

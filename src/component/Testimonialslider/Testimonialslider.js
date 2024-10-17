@@ -3,33 +3,37 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import anita from '../../img/anita.png'
+import rajesh from '../../img/rajesh.png'
+import anil from '../../img/anil.png'
+import vikkarm from '../../img/vikkarm.png'
 import stylecss from './Testimonialslider.module.css';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
-
+ 
 export default function Testimonialslider() {
   const slides = [
     {
-      image: 'https://thispersonnotexist.org/downloadimage/Ac3RhdGljL3dvbWFuL3NlZWQxMjgwNS5qcGVn',
-      content: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-      clientName: 'sachin lawaniya'
+      image: rajesh,
+      content: "Paruit's innovative solutions have transformed the way we manage our cattle. Their technology has significantly improved our efficiency and animal health. Highly recommend them to any farm looking to modernize!",
+      clientName: 'Rajesh Kumar'
     },
     {
-      image: 'https://thispersonnotexist.org/downloadimage/Ac3RhdGljL3dvbWFuL3NlZWQxMjgwNS5qcGVn',
-      content: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet",
-      clientName: 'vinod alwani'
+      image: anita,
+      content: "Since partnering with Paruit, we've seen a noticeable improvement in cattle health and farm productivity. Their support team is always ready to assist, making our experience seamless and rewarding",
+      clientName: 'Anita Verma'
     },
     {
-      image: 'https://thispersonnotexist.org/downloadimage/Ac3RhdGljL3dvbWFuL3NlZWQxMjgwNS5qcGVn',
-      content: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet",
-      clientName: 'chahat sharma'
+      image: vikkarm,
+      content: "Thanks to Paruit, managing our cattle has never been easier. Their technology has streamlined our operations and improved our animals' well-being. I highly recommend them to any farmer.",
+      clientName: 'Vikram Singh'
     },
     {
-      image: 'https://thispersonnotexist.org/downloadimage/Ac3RhdGljL3dvbWFuL3NlZWQxMjgwNS5qcGVn',
-      content: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet",
+      image: anil,
+      content: "Paruit’s solutions have made cattle management easier and more effective for our team. Their expertise in the field is unmatched, and the results speak for themselves. Truly a game-changer!",
       clientName: 'anil sharma'
     }
   ];
-
+ 
   return (
     <>
       <div className={stylecss.testimonial}>
@@ -37,11 +41,11 @@ export default function Testimonialslider() {
         <h2>What Our Clients Say!</h2>
         <h5>Blogging is a conversation, not a code.</h5>
       </div>
-
+ 
       <Swiper
-        modules={[Autoplay, Pagination, Navigation]} 
+        modules={[Autoplay, Pagination, Navigation]}
         className={`mySwiper ${stylecss.swiper_container}`}
-        
+       
         spaceBetween={10}
         breakpoints={{
          
@@ -49,23 +53,23 @@ export default function Testimonialslider() {
             slidesPerView: 1,
             spaceBetween: 10
           },
-        
+       
           1024: {
             slidesPerView: 1.5,
             spaceBetween: 30
           },
-          
+         
           1200: {
             slidesPerView: 1.9,
             spaceBetween: 30
           }
         }}
-      
+     
         autoplay={{
           delay: 5000,
           disableOnInteraction: false
         }}
-        loop={true} 
+        loop={true}
         centeredSlides={true}
         navigation={{
           nextEl: `.${stylecss.swiper_button_next}`,
@@ -79,11 +83,11 @@ export default function Testimonialslider() {
       >
         {/* Pagination Dots */}
         <div className={`swiper-pagination ${stylecss.swiper_pagination}`}></div>
-
+ 
         {/* Navigation Arrows */}
         <div className={`swiper-button-prev ${stylecss.swiper_button_prev}`}></div>
         <div className={`swiper-button-next ${stylecss.swiper_button_next}`}></div>
-
+ 
         {/* Slides */}
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className={stylecss.swiper_slide}>
