@@ -2,7 +2,7 @@ import React from 'react';
 import { TbMathGreater } from 'react-icons/tb';
 import { PiLessThanBold } from 'react-icons/pi';
 import './About.css';
-import aboutPic from '../../img/pic1.png'
+import aboutPic from '../../img/about.png'
 import { FaCheck } from "react-icons/fa";
  
 
