@@ -80,8 +80,8 @@ export default function Testimonialslider() {
         <div className="swiper-pagination"></div>
 
         {/* Navigation Arrows */}
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
+        <div className={`swiper-button-prev ${stylecss.swiper_button_prev}`}></div>
+        <div className={`swiper-button-next ${stylecss.swiper_button_next}`}></div>
 
         {/* Slides */}
         {slides.map((slide, index) => (
