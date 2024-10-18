@@ -22,7 +22,7 @@ import maze3 from '../../img/Maize/maize_3.jpg';
 import molas1 from '../../img/Molasses/molasses-2.jpg';
 import molas2 from '../../img/Molasses/molasses-3.jpg';
 import 'animate.css';
-import { a } from '@react-spring/web';
+// import { a } from '@react-spring/web';
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('*');
@@ -64,13 +64,13 @@ const Portfolio = () => {
     }
   };
   
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
-  };
+  // const item = {
+  //   hidden: { y: 20, opacity: 0 },
+  //   visible: {
+  //     y: 0,
+  //     opacity: 1
+  //   }
+  // };
 
   // Filtered portfolio items
   const filteredItems = portfolioItems.filter((item) =>
@@ -84,7 +84,7 @@ const Portfolio = () => {
   };
 
   // Sort portfolio items based on title in ascending order
-  const sortedItems = [...filteredItems].sort((a, b) => a.title.localeCompare(b.title));
+  // const sortedItems = [...filteredItems].sort((a, b) => a.title.localeCompare(b.title));
 
   // Limit the items to 6 when the "All" filter is selected
   const displayedItems = activeFilter === '*' ? filteredItems.slice(0, 6) : filteredItems;

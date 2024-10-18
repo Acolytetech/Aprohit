@@ -50,11 +50,11 @@ const Navbar = () => {
 
           <img src={logo} className="img-fluid" alt="white logo" />
           </div>
-          <h5>PARUIT</h5>
+          <h5>Paruit  Trading</h5>
         </div>
         <div className="navbar-brand black-logo">
           <img src={logo} className="img-fluid" alt="black logo" />
-          <h5>PARUIT</h5>
+          <h5>Paruit  Trading</h5>
         </div>
 
         <button
@@ -96,7 +96,7 @@ const Navbar = () => {
                 className={`nav-link ${activeSection === 'portfolio' ? 'active' : ''}`}
                 onClick={() => document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })}
               >
-                Portfolio
+                Our Products
               </p>
             </li>
             <li className="nav-item">

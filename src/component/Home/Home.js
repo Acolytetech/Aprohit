@@ -107,7 +107,7 @@ const Home = () => {
                                 {image.heading}
                             </h1>
                             <p>{image.text}</p>
-                            <button onClick={() => document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })}>Get Started ➡ </button>
+                            <button onClick={() => document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })}>View Products </button>
                         </div>
                     </SwiperSlide>
                 ))}

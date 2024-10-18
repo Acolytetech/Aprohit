@@ -184,7 +184,37 @@ background-color:#27AE60;
     }
     }
 
-    @media (max-width:768px) and (min-width:300px){
+    @media (max-width:768px){
+       
+        .testimonial{ 
+            background-color:white;
+            text-align: center;
+            padding: 20px;
+            font-family: "Poppins", sans-serif;
+        
+        }
+        .testimonial h6{
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #27AE60;
+            margin-bottom: 10px;
+        }
+        .testimonial h2{
+            font-size: 26px;
+            line-height: 40px;
+            margin-bottom: 10px;
+            letter-spacing: 0.1rem;
+          
+        }
+        .testimonial h5{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            
+        }
+        
         .swiper_button_next, .swiper_button_prev {
             background-color: #27AE60;
             border-radius: 50%;
@@ -193,30 +223,30 @@ background-color:#27AE60;
             padding: 30px;
             color: white;
             scale: 0.7;
-            opacity: 0; /* Initially invisible */
+            opacity: 1; /* Initially invisible */
             position: absolute;
             transition: transform 0.6s ease, opacity 0.6s ease; /* Smooth transition for position and opacity */
         }
         
         .swiper_button_prev {
-            left: 5%; /* Start off-screen from the left */
+            left: 10%; /* Start off-screen from the left */
             top: 15%;
             /* transform: translateY(-50%); */
         }
         
         .swiper_button_next {
-            right: 5%; /* Start off-screen from the right */
+            right: 10%; /* Start off-screen from the right */
             top: 15%;
             /* transform: translateY(-50%); */
         }
         
         .swiper_container:hover .swiper_button_next {
-            transform: translateX(-100px); /* Move the next button into view */
+            transform: translateX(0px);
             opacity: 1; /* Fade in */
         }
         
         .swiper_container:hover .swiper_button_prev {
-            transform: translateX(100px); /* Move the previous button into view */
+            transform: translateX(0px); /* Move the previous button into view */
             opacity: 1; /* Fade in */
         }
         

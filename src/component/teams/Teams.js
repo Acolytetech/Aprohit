@@ -4,11 +4,12 @@ import image4 from '../../img/image (4).jpg';
 import image5 from '../../img/image (5).jpg';
 
 const Team = [
+  
   {
-    name: " PULKIT CHOUDHARY",
+    name: "BHAGAT SINGH",
     designation: "Director",
-   
-    image: image4,
+  
+    image: image5,
     social: [
       { platform: "facebook", icon: "fab fa-facebook-f", link: "#" },
       { platform: "twitter", icon: "fab fa-twitter", link: "#" },
@@ -17,10 +18,10 @@ const Team = [
     ],
   },
   {
-    name: "BHAGAT SINGH",
+    name: " PULKIT CHOUDHARY",
     designation: "Director",
-  
-    image: image5,
+   
+    image: image4,
     social: [
       { platform: "facebook", icon: "fab fa-facebook-f", link: "#" },
       { platform: "twitter", icon: "fab fa-twitter", link: "#" },
@@ -33,19 +34,19 @@ const Team = [
 ];
 
 const TeamSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex] = useState(0);
 
-  const goToPrevious = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? Math.max(0, Team.length - 3) : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
+  // const goToPrevious = () => {
+  //   const isFirstSlide = currentIndex === 0;
+  //   const newIndex = isFirstSlide ? Math.max(0, Team.length - 3) : currentIndex - 1;
+  //   setCurrentIndex(newIndex);
+  // };
 
-  const goToNext = () => {
-    const isLastSlide = currentIndex >= Team.length - 3;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
+  // const goToNext = () => {
+  //   const isLastSlide = currentIndex >= Team.length - 3;
+  //   const newIndex = isLastSlide ? 0 : currentIndex + 1;
+  //   setCurrentIndex(newIndex);
+  // };
 
   return (
     <section className="team light-grey-bg" id="team">

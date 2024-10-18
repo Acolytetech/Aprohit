@@ -8,7 +8,7 @@ const Preloader = () => {
     const interval = setInterval(() => {
       setPercentage((prev) => {
         if (prev < 100) {
-          return prev + 1;
+          return prev + 5;
         } else {
           clearInterval(interval);
           return 100;

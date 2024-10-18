@@ -1,23 +1,30 @@
 .white-bg {
     background-color: #F2FFE9;
+    max-width: 100%;
 }
 
 section {
+    /* width: 100%; */
+    
     padding-top: 120px;
     padding-bottom: 120px;
+    
 }
 
 .services-carousel {
     text-align: center;
     padding: 0 100px;
     width: 100%;
+    max-width: 1400px;
     position: relative;
     z-index: 1;
+    margin: 0PX auto;
 }
 
 .service-flex {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .services-col-12 {
@@ -53,8 +60,9 @@ section {
 }
 
 .service-block {
-    height:90vh;
-    padding-top: 40px;
+    /* height:fit-content; */
+    max-height:   100vh;
+    padding-top: 20px;
     padding-bottom: 45px;
     background-color: white;
     transition: all 0.3s;
@@ -74,7 +82,7 @@ section {
 
 .service-block h2 {
     height: 42px;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: .5rem;
     padding: 0px 20px;
@@ -99,6 +107,7 @@ section {
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 0px;
+    height: 150px;
 }
 
 
@@ -107,6 +116,8 @@ section {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin: 0PX auto;
+gap: 30PX;
 }
 
 
@@ -194,6 +205,7 @@ section {
     .services-col-12 {
         flex: 0 0 auto;
         width: 100%;
+        height: fit-content;
         padding-bottom: 3rem;
     }
 
@@ -225,7 +237,7 @@ section {
     }
 
     .service-block {
-        height: 45vh;
+        height: fit-content;
         padding: 20px 0px;
         background-color: white;
         transition: all 0.3s;
@@ -306,11 +318,11 @@ section {
     }
 }
 
-@media (max-width:768px) and (min-width:300px) {
+@media (max-width:768px) {
 
     section {
         padding-top: 80px;
-        padding-bottom: 120px;
+        padding-bottom: 80px;
     }
 
     .services-carousel {
@@ -367,8 +379,8 @@ section {
 }
     .service-block {
         width: 100%;
-        height: 60vh;
-        padding: 20px 0px;
+        height:fit-content;
+        padding: 30px 0px;
         background-color: white;
         transition: all 0.3s;
         margin: 0 10px;
@@ -392,7 +404,7 @@ section {
     }
 
     .pic {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .pic img {
@@ -402,11 +414,12 @@ section {
     }
 
     .service-block p {
-margin-top: 50px;
+margin-top: 20px;
         font-size: 16px;
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 0px;
+        text-align: justify;
     }
 
 
@@ -420,10 +433,10 @@ margin-top: 50px;
     .services-swiper-button {
         color: #fff;
         font-size: 4px;
-        padding: 8px 16px;
-        scale: 0.7;
+        padding: 11px 16px;
+        scale: 0.8;
         cursor: pointer;
-        top: 50%;
+        top: 42%;
         width: fit-content;
         height: fit-content;
         border-radius: 50%;

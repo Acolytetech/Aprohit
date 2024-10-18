@@ -2,8 +2,7 @@
 .navbar {
     font-family: Poppins, sans-serif;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 0px;
-    padding-bottom: 0px;
+  padding: 27px 0px;
     background-color: transparent;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -38,10 +37,13 @@
     text-decoration: none;
     white-space: nowrap;
    display: flex;
+   
 }
 .navbar-brand h5{
     align-items: center;
     justify-content: center;
+    text-transform: capitalize;
+    letter-spacing: 0rem;
     
 }
 
@@ -59,6 +61,7 @@
 
 /* Scroll effect styles */
 .navbar.scrolled {
+    padding: 10px 0px;
     background-color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -220,6 +223,14 @@ a.btn.btn-primary {
 
 
 @media (max-width: 768px) {
+    .navbar-brand h5{
+        align-items: center;
+        justify-content: center;
+        text-transform: capitalize;
+        font-size: 20px;
+        padding: 0px;   
+        
+    }
     .collapse {
         display: none;
     }
