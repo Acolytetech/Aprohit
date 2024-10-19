@@ -29,6 +29,9 @@ footer ul li {
 footer ul li a {
     color: #fff;
 }
+footer ul li a:hover{
+    color: #27AE60;
+}
 
 .footer-pading{
 padding-top: 1.5rem;

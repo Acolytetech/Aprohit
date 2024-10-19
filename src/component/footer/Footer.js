@@ -11,8 +11,8 @@ const Footer = () => {
             <ul>
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#services">SERVICES</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#team">Teams</a></li>
+              <li><a href="#portfolio">OUR PRODUCTS</a></li>
+              <li><a href="#team">TEAMS</a></li>
               <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="footer-row pt-3 copyright">
           <div className="footer-col-12">
-            THISONE © 2024
+          PARUIT TRADING PRIVATE LIMITED © 2024
           </div>
         </div>
       </div>

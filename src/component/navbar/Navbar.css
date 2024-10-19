@@ -223,6 +223,10 @@ a.btn.btn-primary {
 
 
 @media (max-width: 768px) {
+    .navbar {
+      padding: 7px 0px;
+       
+    }
     .navbar-brand h5{
         align-items: center;
         justify-content: center;
@@ -256,13 +260,14 @@ a.btn.btn-primary {
         background-color: rgba(24, 23, 23, 0.772);
         position: absolute;
         align-items: left;
-        top: 40px;
+        top: 50px;
         right: 0;
         width: 150px;
         /* height: 80vh; */
         z-index: 1000;
         border-radius: 10px 0 10px 10px;
         padding: 20px 0px 50px 0px;
+        transition: all ease-in-out 11s;
     }
 
     .navbar-nav {
@@ -271,6 +276,11 @@ a.btn.btn-primary {
     }
 
     .nav-link {
+        padding: 10px;
+        color: white;
+        font-size: 12px;
+    }
+    .navbar.scrolled .nav-link{
         padding: 10px;
         color: white;
         font-size: 12px;

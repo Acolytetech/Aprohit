@@ -61,7 +61,9 @@ const ContactUs = () => {
                             </div>
                             <div className="detail">
                                 <div className="heading">Call Us</div>
-                               +91 7597373091
+                                <a href="tel:+917597373091" target="_blank" rel="noopener noreferrer">+91 7597373091</a>
+
+                              
                             </div>
                         </address>
                         <address className="clearfix d-flex align-items-center">
@@ -70,9 +72,8 @@ const ContactUs = () => {
                             </div>
                             <div className="detail">
                                 <div className="heading">Write Us</div>
-                                <a href="ppcpl2005@gmail.com" target="_blank" rel="noopener noreferrer">
-                                ppcpl2005@gmail.com
-                                </a>
+                                <a href="mailto:ppcpl2005@gmail.com" target="_blank" rel="noopener noreferrer">ppcpl2005@gmail.com</a>
+
                             </div>
                         </address>
                     </div>
