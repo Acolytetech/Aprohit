@@ -118,15 +118,15 @@ const ContactUs = () => {
                                 />
                             </div>
                             <div className="mb-3">
-                                <textarea
-                                    className="form-control"
+                                <input
+                                    className="form-control message-box"
                                     name="comment"
                                     placeholder="Enter your message "
                                     rows="3"
                                     value={formData.comment}
                                     onChange={handleChange}
-                                    required
-                                ></textarea>
+                                
+                                ></input>
                             </div>
                             {message && <div id="message_post">{message}</div>}
                             <button type="submit" className="btn btn-primary mt-3">SEND MESSAGE</button>

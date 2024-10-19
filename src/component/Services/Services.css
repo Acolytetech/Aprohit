@@ -38,11 +38,15 @@ section {
 }
 
 .herotext h6 {
+    /* font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #27AE60;
+    padding-bottom: .5rem; */
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #27AE60;
-    padding-bottom: .5rem;
 }
 
 .herotext h2 {
@@ -318,7 +322,7 @@ gap: 30PX;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:500px) {
 
     section {
         padding-top: 80px;

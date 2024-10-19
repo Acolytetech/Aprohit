@@ -16,7 +16,7 @@ const About = () => {
                     </div>
                     <div className="about-col-lg-6">
                         <div className="aboutText">
-                            <h6>/Who we are</h6>
+                            <h6>Who we are</h6>
                             <h2>We Are Perfect Solutions for Your Cattle Feed Needs.</h2>
                             <h5 className="pt-2">
                             We provide fresh, fair, and sustainable cattle feed, sourced directly from local farmers. Our high-quality products are designed to nourish your livestock and contribute to a healthier planet. Trust PARUIT TRADING for reliable, sustainable feed solutions that support the well-being of your herds                            </h5>
