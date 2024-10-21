@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+// import  { useEffect, useState } from 'react';
 import './App.css';
-import Preloader from './component/preloader/Preloader';
+// import Preloader from './component/preloader/Preloader';
 import Navbar from './component/navbar/Navbar';
 import Home from './component/Home/Home';
 import About from './component/About/About';
@@ -13,19 +14,19 @@ import Portfolio from './component/portfolio/Prortfolio';
 // import Demo from/ './component/Demo/Demo';
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000); 
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 3000); 
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-  if (loading) {
-    return <Preloader />;
-  }
+  // if (loading) {
+  //   return <Preloader />;
+  // }
 
   return (
     <div className="App">
