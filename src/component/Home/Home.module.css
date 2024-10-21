@@ -1,4 +1,4 @@
-.hero-section {
+.heroSection {
     position: relative;
     /* height: fit-content; */
 }
@@ -26,7 +26,7 @@
     border: 2px solid rgba(17, 17, 17, 0.445)
 }
  
-.slider-area {
+.sliderArea {
     width: 100%;
     display: block;
     height: 100%;
@@ -35,7 +35,7 @@
     position: relative;
 }
  
-.slider-area .image-container {
+.sliderArea .imageContainer {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -48,7 +48,7 @@
     border: 2px solid rgba(17, 17, 17, 0.445);
     aspect-ratio: 1;
 }
-.slider-area img {
+.sliderArea img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -65,7 +65,7 @@
     }
 }
  
-.carousel-text {
+.carouselText {
     position: absolute;
     width: 70%;
     top: 50%;
@@ -75,7 +75,7 @@
     text-align: center;
     align-items: center;
 }
-.carousel-text h1 {
+.carouselText h1 {
     width: 70%;
     margin: 0px auto;
     font-size: 55px;
@@ -105,7 +105,7 @@
  
  
  
-.carousel-text p {
+.carouselText p {
     width: 80%;
     margin: 0px auto;
     margin-top: 20px;
@@ -113,7 +113,7 @@
     line-height: 26px;
 }
  
-.carousel-text button {
+.carouselText button {
     padding: 15px 50px;
     margin-top: 40px;
     border-radius: 150px;
@@ -126,7 +126,7 @@
     text-transform: uppercase;
 }
  
-.autoplay-progress {
+.autoplayProgress {
     position: absolute;
     right: 16px;
     bottom: 16px;
@@ -140,7 +140,7 @@
     color: var(--swiper-theme-color);
 }
  
-.autoplay-progress svg {
+.autoplayProgress svg {
     --progress: 0;
     position: absolute;
     left: 0;
@@ -158,7 +158,7 @@
  
 }
  
-.autoplay-progress span {
+.autoplayProgress span {
     color: white;
 }
  

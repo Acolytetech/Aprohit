@@ -1,13 +1,13 @@
 import React from 'react';
 // import { FaTwitter, FaFacebookF, FaBehance, FaDribbble } from 'react-icons/fa';
-import './Footer.css'
+import cssfooter from  './Footer.module.css'
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container-footer">
-        <div className="footer-row">
-          <div className="footer-col-12">
+    <footer className={cssfooter.footer}>
+      <div className={cssfooter.container_footer}>
+        <div className={cssfooter.footer_row}>
+          <div className={cssfooter.footer_col_12}>
             <ul>
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#services">SERVICES</a></li>
@@ -17,8 +17,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="footer-row footer-pading">
-          <div className="footer-col-12">
+        <div className={` ${cssfooter.footer_row} ${cssfooter.footer_pading}`}>
+          <div className={cssfooter.footer_col_12}>
             {/* <ul className="socialmedia">
               <li><a href=""><FaTwitter /></a></li>
               <li><a href=""><FaFacebookF /></a></li>
@@ -27,8 +27,8 @@ const Footer = () => {
             </ul> */}
           </div>
         </div>
-        <div className="footer-row pt-3 copyright">
-          <div className="footer-col-12">
+        <div className={` ${cssfooter.footer_row} ${cssfooter.pt_3} ${cssfooter.copyright}`}>
+          <div className={cssfooter.footer_col_12}>
           PARUIT TRADING PRIVATE LIMITED © 2024
           </div>
         </div>

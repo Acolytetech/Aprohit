@@ -6,13 +6,13 @@ footer {
     padding-bottom: 70px;
 }
 
-.container-footer{
+.container_footer{
     width: 100%;
 }
-.footer-row{
+.footer_row{
     display: flex;
 }
-.footer-col-12{
+.footer_col_12{
     width:100%;
 }
 footer ul {
@@ -33,7 +33,7 @@ footer ul li a:hover{
     color: #27AE60;
 }
 
-.footer-pading{
+.footer_pading{
 padding-top: 1.5rem;
 }
 footer ul.socialmedia li {

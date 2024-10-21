@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import './teamMembers.css'; 
+import cssteam from './teamMembers.module.css'; 
 import image4 from '../../img/image (4).jpg';
 import image5 from '../../img/image (5).jpg';
 
 const Team = [
-  
   {
     name: "BHAGAT SINGH",
     designation: "Director",
-  
     image: image5,
     social: [
       { platform: "facebook", icon: "fab fa-facebook-f", link: "#" },
@@ -18,9 +16,8 @@ const Team = [
     ],
   },
   {
-    name: " PULKIT CHOUDHARY",
+    name: "PULKIT CHOUDHARY",
     designation: "Director",
-   
     image: image4,
     social: [
       { platform: "facebook", icon: "fab fa-facebook-f", link: "#" },
@@ -28,13 +25,11 @@ const Team = [
       { platform: "instagram", icon: "fab fa-instagram", link: "#" },
       { platform: "linkedin", icon: "fab fa-linkedin-in", link: "#" },
     ],
-  }
-  
- 
+  },
 ];
 
 const TeamSection = () => {
-  const [currentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   // const goToPrevious = () => {
   //   const isFirstSlide = currentIndex === 0;
@@ -49,11 +44,11 @@ const TeamSection = () => {
   // };
 
   return (
-    <section className="team light-grey-bg" id="team">
-      <div className="teams-container">
-        <div className="row">
-          <div className="col-12">
-            <div className="herotext text-center">
+    <section className={cssteam.team} id="team">
+      <div className={cssteam.teams_container}>
+        <div className={cssteam.row}>
+          <div className={cssteam.col_12}>
+            <div className={`herotext ${cssteam.herotext} ${cssteam.text_center}`}>
               <h6>MEET OUR TEAM!</h6>
               <h2>Your Partner in Smarter Cattle Management</h2>
               <h5 className="pt-2">A group of cattle professionals committed to revolutionizing cattle field solutions.</h5>
@@ -61,45 +56,17 @@ const TeamSection = () => {
           </div>
         </div>
 
-        <div className="team-carousel-wrapper">
-          <div className="team-carousel">
+        <div className={cssteam.team_carousel_wrapper}>
+          <div className={cssteam.team_carousel}>
             {Team.slice(currentIndex, currentIndex + 3).map((member, index) => (
-              <div
-                className="team-item"
-                key={index}
-              >
-                <img className="img-fluid mb-4" src={member.image} alt={member.name} />
+              <div className={`team-item ${cssteam.team_item}`} key={index}>
+                <img className={cssteam.img_fluid} src={member.image} alt={member.name} />
                 <h5>{member.name}</h5>
                 <p>{member.designation}</p>
-                <span className="text-primary">{member.role}</span>
-                <ul className="team-social">
-                  {member.social.map((social, idx) => (
-                    <li key={idx}>
-                      <a className="btn btn-square" href={social.link}>
-                        <i className={social.icon}></i>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+              
               </div>
             ))}
           </div>
-
-          {/* Navigation buttons */}
-          {/* <button 
-            className="carousel-control prev" 
-            onClick={goToPrevious}
-            aria-label="Previous team member"
-          >
-            <PiLessThanLight />
-          </button>
-          <button 
-            className="carousel-control next" 
-            onClick={goToNext}
-            aria-label="Next team member"
-          >
-            <PiGreaterThanLight />
-          </button> */}
         </div>
       </div>
     </section>

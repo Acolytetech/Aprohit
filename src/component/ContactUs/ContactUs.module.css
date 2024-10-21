@@ -1,20 +1,21 @@
-.contact-us{
+.contact_us{
 padding-top: 120px;
     padding-bottom: 120px;
    
 }
 
-.contact-row{
+.contact_row{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     
 }
-.contact-col-6{
+.contact_col_6{
     width: 45%;
 }
 .herotext{
 padding-bottom: 1.5rem ;
+text-align: center;
 }
 .herotext h6 {
     /* font-size: 16px;
@@ -39,13 +40,13 @@ padding-bottom: 1.5rem ;
     display: flex;
     padding-left: 4.5rem;
 }
-.contact-us address .icon {
+.contact_us address .icon {
     float: left;
     font-size: 70px;
     padding-right: 20px;
 }
 
-.contact-us address .detail {
+.contact_us address .detail {
     padding-top: 2px;
     font-size: 22px;
     line-height: 32px;
@@ -54,10 +55,10 @@ padding-bottom: 1.5rem ;
     color: black;
 }
 
-.mb-3 {
+.mb_3 {
     margin-bottom: 1rem !important;
 }
-.contact-us .form-control {
+.contact_us .form_control {
     display: block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 18px);
@@ -72,7 +73,7 @@ padding-bottom: 1.5rem ;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.message-box{
+.message_box{
     height: fit-content;
 }
 
@@ -81,7 +82,7 @@ padding-bottom: 1.5rem ;
     padding-bottom: 6px;
 }
 
-.contact-us .btn {
+.contact_us .btn {
     display: inline-block;
     font-weight: 400;
     color: #fff;
@@ -102,7 +103,7 @@ padding-bottom: 1.5rem ;
      cursor: pointer;
 }
 
-.contact-us address .detail .heading {
+.contact_us address .detail .heading {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -114,18 +115,18 @@ padding-bottom: 1.5rem ;
 
 
 @media (min-width:768px) and (max-width:1024px) {
-    .contact-us{
+    .contact_us{
         padding-top: 120px;
             padding-bottom: 120px;
             width: 100%;
         }
         
-        .contact-row{
+        .contact_row{
             display: flex;
             flex-wrap: wrap;
             width: 100%;
         }
-        .contact-col-6{
+        .contact_col_6{
             width: 50%;
         }
         .herotext{
@@ -152,22 +153,22 @@ padding-bottom: 1.5rem ;
             display: flex;
             padding-left: 4.5rem;
         }
-        .contact-us address .icon {
+        .contact_us address .icon {
             float: left;
             font-size: 50px;
             padding-right: 20px;
         }
         
-        .contact-us address .detail {
+        .contact_us address .detail {
             padding-top: 2px;
             font-size: 16px;
             line-height: 32px;
         }
         
-        .mb-3 {
+        .mb_3 {
             margin-bottom: 1rem !important;
         }
-        .contact-us .form-control {
+        .contact_us .form_control {
             display: block;
             width: 90%;
             height: calc(1.5em + 0.75rem + 18px);
@@ -188,7 +189,7 @@ padding-bottom: 1.5rem ;
             padding-bottom: 6px;
         }
         
-        .contact-us .btn {
+        .contact_us .btn {
             display: inline-block;
             font-weight: 400;
             color: #fff;
@@ -209,7 +210,7 @@ padding-bottom: 1.5rem ;
              cursor: pointer;
         }
         
-        .contact-us address .detail .heading {
+        .contact_us address .detail .heading {
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -219,19 +220,19 @@ padding-bottom: 1.5rem ;
         }  
 }
 @media (min-width:300px) and (max-width:768px) {
-    .contact-us{
+    .contact_us{
         padding-top: 120px;
             padding-bottom: 120px;
             width: 100%;
             text-align: left;
         }
         
-        .contact-row{
+        .contact_row{
             display: flex;
             flex-wrap: wrap;
             width: 100%;
         }
-        .contact-col-6{
+        .contact_col_6{
             width: 100%;
         }
         .herotext{
@@ -258,22 +259,22 @@ padding-bottom: 1.5rem ;
             display: flex;
             padding-left: 4.5rem;
         }
-        .contact-us address .icon {
+        .contact_us address .icon {
             float: left;
             font-size: 50px;
             padding-right: 20px;
         }
         
-        .contact-us address .detail {
+        .contact_us address .detail {
             padding-top: 2px;
             font-size: 16px;
             line-height: 32px;
         }
         
-        .mb-3 {
+        .mb_3 {
             margin-bottom: 1rem !important;
         }
-        .contact-us .form-control {
+        .contact_us .form_control {
             display: block;
             margin: 0px auto;
             width: 80%;
@@ -295,7 +296,7 @@ padding-bottom: 1.5rem ;
             padding-bottom: 6px;
         }
         
-        .contact-us .btn {
+        .contact_us .btn {
             display: inline-block;
             font-weight: 400;
             color: #fff;
@@ -317,7 +318,7 @@ padding-bottom: 1.5rem ;
              margin: 0px 25%;
         }
         
-        .contact-us address .detail .heading {
+        .contact_us address .detail .heading {
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 1px;

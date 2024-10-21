@@ -107,14 +107,6 @@ const Navbar = () => {
                 Team
               </p>
             </li>
-            {/* <li className="nav-item">
-              <p
-                className={`nav-link ${activeSection === 'blog' ? 'active' : ''}`}
-                onClick={() => document.getElementById('blog').scrollIntoView({ behavior: 'smooth' })}
-              >
-                Blog
-              </p>
-            </li> */}
             <li className="nav-item">
               <p
                 className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
@@ -124,17 +116,6 @@ const Navbar = () => {
               </p>
             </li>
           </ul>
-
-          {/* <span className="ps-3 d-none d-lg-block">
-            <a
-              href="https://themeforest.net/item/this-one-one-page-responsive-website-template/7236268?ref=alia"
-              className="btn btn-primary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              BUY NOW
-            </a>
-          </span> */}
         </div>
       </div>
     </nav>

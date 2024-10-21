@@ -6,7 +6,7 @@
     background-color: rgba(241, 238, 238, 0.626);
 }
 
-.team-carousel-wrapper {
+.team_carousel_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,9 +19,10 @@
 
 }
 
-.team-carousel {
+.team_carousel {
     display: flex;
     width: 100%;
+    /* height: 400px; */
     transition: transform 0.5s ease-in-out;
     will-change: transform;
    justify-content: center;
@@ -29,12 +30,13 @@
 
 }
 
-.team-item {
+.team_item {
    
         position: relative;
         text-align: center;
         background-color: #fff;
     flex: 0 0 250px;
+
     
         padding-bottom: 1.5rem !important;
     
@@ -43,12 +45,12 @@
     
 }
 
-.team-item.active {
+.team_item.active {
     transform: scale(1);
     opacity: 1;
 }
 
-.team-item img {
+.team_item img {
     border-radius: 2px;
     transition: transform 0.5s ease-in-out;
     width: 100%;
@@ -57,68 +59,19 @@
     
 }
 
-.team-item h5 {
+.team_item h5 {
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
 }
-.team-item p {
+.team_item p {
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
     color: #27AE60;
 }
-
-.team-social {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.team-social li {
-    margin: 0 5px;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #27AE60;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 10;
-    transition: background-color 0.3s;
-    border-radius: 28px;
-}
-
-.carousel-control.prev {
-    left: 10px;
-}
-
-.carousel-control.next {
-    right: 10px;
-}
-
-.carousel-control:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-.text-primary{
-    color: #27AE60;
-}
-
-
-  
-
 
 
 @media (min-width: 1200px) {
-    .teams-container {
+    .teams_container {
        
             max-width: 1140px;
             margin:0 auto;
@@ -136,7 +89,7 @@
         padding-bottom: 50px;
     }
     
-    .team-carousel-wrapper {
+    .team_carousel_wrapper {
         display: block !important;
         justify-content: center;
         align-items: center;
@@ -148,7 +101,7 @@
         --bs-gutter-x: 1rem;
     }
     
-    .team-carousel {
+    .team_carousel {
         display: block;
         transition: transform 0.5s ease-in-out;
         will-change: transform;
@@ -157,7 +110,7 @@
     
     }
     
-    .team-item {
+    .team_item {
        
             position: relative;
             text-align: center;
@@ -173,12 +126,12 @@
         
     }
     
-    .team-item.active {
+    .team_item.active {
         transform: scale(1);
         opacity: 1;
     }
     
-    .team-item img {
+    .team_item img {
         /* border-radius: 10px; */
         transition: transform 0.5s ease-in-out;
         width: 80%;
@@ -189,60 +142,16 @@
         scale: 0.8;
     }
     
-    .team-item h5 {
+    .team_item h5 {
         font-size: 1.25rem;
         margin-bottom: 0.25rem;
         margin-top: -40px;
         
     }
-    .team-item p {
+    .team_item p {
         font-size: 1.25rem;
         margin-bottom: 0.25rem;
         color: #27AE60;
     }
     
-    .team-social {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .team-social li {
-        margin: 0 5px;
-    }
-    
-    .carousel-control {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #27AE60;
-        border: none;
-        color: white;
-        font-size: 1.2rem;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        z-index: 10;
-        transition: background-color 0.3s;
-        border-radius: 28px;
-    }
-    
-    .carousel-control.prev {
-        left: 10px;
-    }
-    
-    .carousel-control.next {
-        right: 10px;
-    }
-    
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    .text-primary{
-        color: #27AE60;
-    }
 }

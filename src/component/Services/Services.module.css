@@ -1,4 +1,4 @@
-.white-bg {
+.whiteBg {
     background-color: #F2FFE9;
     max-width: 100%;
 }
@@ -11,7 +11,7 @@ section {
     
 }
 
-.services-carousel {
+.servicesCarousel {
     text-align: center;
     padding: 0 100px;
     width: 100%;
@@ -21,13 +21,13 @@ section {
     margin: 0PX auto;
 }
 
-.service-flex {
+.service_flex {
     display: flex;
     flex-wrap: wrap;
     
 }
 
-.services-col-12 {
+.services_col_12 {
     flex: 0 0 auto;
     width: 100%;
     padding-bottom: 3rem;
@@ -63,7 +63,7 @@ section {
     padding-top: .5rem;
 }
 
-.service-block {
+.service_block {
     /* height:fit-content; */
     max-height:   100vh;
     padding-top: 20px;
@@ -75,7 +75,7 @@ section {
     /* padding: 20px; */
 }
 
-.service-block h6 {
+.service_block h6 {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -84,7 +84,7 @@ section {
     margin-bottom: .5rem;
 }
 
-.service-block h2 {
+.service_block h2 {
     height: 42px;
     font-size: 20px;
     font-weight: 600;
@@ -105,7 +105,7 @@ section {
     -webkit-transform-style: preserve-3d;
 }
 
-.service-block p {
+.service_block p {
     margin-top: 10px;
     font-size: 16px;
     padding-left: 20px;
@@ -115,7 +115,7 @@ section {
 }
 
 
-.service-slide-container {
+.service_slide_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +125,7 @@ gap: 30PX;
 }
 
 
-.services-swiper-button {
+.services_swiper_button {
     color: #fff;
     font-size: 2px;
     padding: 11px 16px;
@@ -140,7 +140,7 @@ gap: 30PX;
     position: absolute;
 
 }
-.swiper-button-prev:after {
+.swiper_button_prev:after {
     font-family: swiper-icons;
     /* font-size: var(--swiper-navigation-size); */
     text-transform: none !important;
@@ -150,7 +150,7 @@ gap: 30PX;
     line-height: 1;
 }
  
-.swiper-button-next:after {
+.swiper_button_next:after {
     font-family: swiper-icons;
     /* font-size: var(--swiper-navigation-size); */
     text-transform: none !important;
@@ -161,24 +161,24 @@ gap: 30PX;
 }
  
 
-.services-swiper-button:hover {
+.services_swiper_button:hover {
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.325);
 }
 
 /* .swiper-button-next {
     right: 10%;
 } */
-.swiper-button-next {
+.swiper_button_next {
     right: 9%;
     top: 227px;
     bottom: 0;
 }
-.swiper-button-prev {
+.swiper_button_prev {
     left: 9%;
     top: 227px;
     bottom: 0;
 }
-.mobile-view-slide{
+.mobile_view_slide{
     display: none;
 }
 
@@ -193,7 +193,7 @@ gap: 30PX;
         padding-bottom: 120px;
     }
 
-    .services-carousel {
+    .servicesCarousel {
         text-align: center;
         padding: 0 10px;
         width: 100%;
@@ -201,12 +201,12 @@ gap: 30PX;
         z-index: 1;
     }
 
-    .service-flex {
+    .service_flex {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .services-col-12 {
+    .services_col_12 {
         flex: 0 0 auto;
         width: 100%;
         height: fit-content;
@@ -240,7 +240,7 @@ gap: 30PX;
         padding-top: .5rem;
     }
 
-    .service-block {
+    .service_block {
         height: fit-content;
         padding: 20px 0px;
         background-color: white;
@@ -249,7 +249,7 @@ gap: 30PX;
         flex: 1;
     }
 
-    .service-block h6 {
+    .service_block h6 {
         font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -258,7 +258,7 @@ gap: 30PX;
         margin-bottom: .5rem;
     }
 
-    .service-block h2 {
+    .service_block h2 {
         font-size: 18px;
         font-weight: 600;
         margin-bottom: .5rem;
@@ -274,7 +274,7 @@ gap: 30PX;
         -webkit-transform-style: preserve-3d;
     }
 
-    .service-block p {
+    .service_block p {
         margin: 0px;
         font-size: 16px;
         padding-left: 20px;
@@ -283,14 +283,14 @@ gap: 30PX;
     }
 
 
-    .service-slide-container {
+    .service_slide_container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
     }
 
-    .services-swiper-button {
+    .services_swiper_button {
         color: #fff;
         font-size: 4px;
         padding: 8px 16px;
@@ -310,14 +310,14 @@ gap: 30PX;
         box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.325);
     }
 
-    .swiper-button-next {
+    .swiper_button_next {
         right: 1%;
     }
 
-    .swiper-button-prev {
+    .swiper_button_prev {
         left: 1%;
     }
-    .mobile-view-slide{
+    .mobile_view_slide{
         display: none;
     }
 }
@@ -329,7 +329,7 @@ gap: 30PX;
         padding-bottom: 80px;
     }
 
-    .services-carousel {
+    .servicesCarousel {
         text-align: center;
         padding: 0 10px;
         width: 100%;
@@ -337,12 +337,12 @@ gap: 30PX;
         z-index: 1;
     }
 
-    .service-flex {
+    .service_flex {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .services-col-12 {
+    .services_col_12 {
         flex: 0 0 auto;
         width: 100%;
         padding-bottom: 1.5rem;
@@ -375,13 +375,13 @@ gap: 30PX;
         padding-top: .1rem;
         padding: 0px 20px !important;
     }
-.desktop-view-slide{
+.desktop_view_slide{
     display: none !important;
 }
-.mobile-view-slide{
+.mobile_view_slide{
     display: flex !important;
 }
-    .service-block {
+    .service_block {
         width: 100%;
         height:fit-content;
         padding: 30px 0px;
@@ -392,7 +392,7 @@ gap: 30PX;
 
     }
 
-    .service-block h6 {
+    .service_block h6 {
         font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -401,7 +401,7 @@ gap: 30PX;
         margin-bottom: .5rem;
     }
 
-    .service-block h2 {
+    .service_block h2 {
         font-size: 18px;
         font-weight: 600;
         margin-bottom: .5rem;
@@ -417,7 +417,7 @@ gap: 30PX;
         -webkit-transform-style: preserve-3d;
     }
 
-    .service-block p {
+    .service_block p {
 margin-top: 20px;
         font-size: 16px;
         padding-left: 20px;
@@ -427,14 +427,14 @@ margin-top: 20px;
     }
 
 
-    .service-slide-container {
+    .service_slide_container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
     }
 
-    .services-swiper-button {
+    .services_swiper_button {
         color: #fff;
         font-size: 4px;
         padding: 11px 16px;
@@ -450,15 +450,15 @@ margin-top: 20px;
 
     }
 
-    .services-swiper-button:hover {
+    .services_swiper_button:hover {
         box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.325);
     }
 
-    .swiper-button-next {
+    .swiper_button_next {
         right: 1%;
     }
 
-    .swiper-button-prev {
+    .swiper_button_prev {
         left: 1%;
     }
 }

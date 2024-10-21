@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IoLocationOutline, IoCallOutline, IoMailOpenOutline } from "react-icons/io5";
 import emailjs from 'emailjs-com'; // Import EmailJS
-import './ContactUs.css';
+import csscontact from'./ContactUs.module.css';
  
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -37,56 +37,56 @@ const ContactUs = () => {
     };
  
     return (
-        <section className="contact-us" id="contact">
-            <div className="contact-container">
-                <div className="contact-row">
-                    <div className="contact-col-6">
-                        <div className="herotext pb-4">
+        <section className={csscontact.contact_us} id="contact">
+            <div className={csscontact.contact_container}>
+                <div className={csscontact.contact_row}>
+                    <div className={csscontact.contact_col_6}>
+                        <div className={csscontact.herotext}>
                             <h6>Get In Touch</h6>
                             <h2>Talk or Meet with Us</h2>
                         </div>
-                        <address className="clearfix d-flex align-items-center pb-2">
-                            <div className="icon">
+                        <address className={` ${csscontact.clearfix} ${csscontact.d_flex} ${csscontact.align_items_center} ${csscontact.pb_2}`}>
+                            <div className={csscontact.icon}>
                                 <IoLocationOutline />
                             </div>
-                            <div className="detail">
-                                <div className="heading">Get Us Here</div>
+                            <div className={csscontact.detail}>
+                                <div className={csscontact.heading}>Get Us Here</div>
                                 B 340 Kanta Khaturia Colony,<br />
                                 Bikaner Rajasthan, 334003, India<br />
                             </div>
                         </address>
-                        <address className="clearfix d-flex align-items-center pb-2">
-                            <div className="icon">
+                        <address className={` ${csscontact.clearfix} ${csscontact.d_flex} ${csscontact.align_items_center}`}>
+                            <div className={csscontact.icon}>
                                 <IoCallOutline />
                             </div>
-                            <div className="detail">
-                                <div className="heading">Call Us</div>
+                            <div className={csscontact.detail}>
+                                <div className={csscontact.heading}>Call Us</div>
                                 <a href="tel:+917597373091" target="_blank" rel="noopener noreferrer">+91 7597373091</a>
 
                               
                             </div>
                         </address>
-                        <address className="clearfix d-flex align-items-center">
-                            <div className="icon">
+                        <address className={` ${csscontact.clearfix} ${csscontact.d_flex} ${csscontact.align_items_center}`}>
+                            <div className={csscontact.icon}>
                                 <IoMailOpenOutline />
                             </div>
-                            <div className="detail">
-                                <div className="heading">Write Us</div>
+                            <div className={csscontact.detail}>
+                                <div className={csscontact.heading}>Write Us</div>
                                 <a href="mailto:ppcpl2005@gmail.com" target="_blank" rel="noopener noreferrer">ppcpl2005@gmail.com</a>
 
                             </div>
                         </address>
                     </div>
-                    <div className="contact-col-6 pt-5 pt-lg-0">
-                        <div className="herotext pb-4">
+                    <div className={`${csscontact.contact_col_6} ${csscontact.pt_5} ${csscontact.pt_lg_0}`}>
+                        <div className={`${csscontact.herotext} ${csscontact.pb_4}`}>
                             <h6>Estimate Project</h6>
                             <h2>Let Us Know Here</h2>
                         </div>
                         <form onSubmit={handleSubmit} id="ContactForm">
-                            <div className="mb-3">
+                            <div className={csscontact.mb_3}>
                                 <input
                                     type="text"
-                                    className="form-control"
+                                    className={csscontact.form_control}
                                     name="name"
                                     placeholder="Enter your name *"
                                     value={formData.name}
@@ -95,10 +95,10 @@ const ContactUs = () => {
                                 />
                             </div>
                            
-                            <div className="mb-3">
+                            <div className={csscontact.mb_3}>
                                 <input
                                     type="email"
-                                    className="form-control"
+                                    className={csscontact.form_control}
                                     name="email"
                                     placeholder="Enter your email *"
                                     value={formData.email}
@@ -106,10 +106,10 @@ const ContactUs = () => {
                                     required
                                 />
                             </div>
-                            <div className="mb-3">
+                            <div className={csscontact.mb_3}>
                                 <input
                                     type="Phone"
-                                    className="form-control"
+                                    className={csscontact.form_control}
                                     name="phone"
                                     placeholder="Phone *"
                                     value={formData.phone}
@@ -117,9 +117,9 @@ const ContactUs = () => {
                                     required
                                 />
                             </div>
-                            <div className="mb-3">
+                            <div className={csscontact.mb_3}>
                                 <input
-                                    className="form-control message-box"
+                                    className={`${csscontact.form_control} ${csscontact.message_box}`}
                                     name="comment"
                                     placeholder="Enter your message "
                                     rows="3"
@@ -129,7 +129,7 @@ const ContactUs = () => {
                                 ></input>
                             </div>
                             {message && <div id="message_post">{message}</div>}
-                            <button type="submit" className="btn btn-primary mt-3">SEND MESSAGE</button>
+                            <button type="submit" className={`${csscontact.btn} ${csscontact.btn_primary} ${csscontact.mt_3}`}>SEND MESSAGE</button>
                         </form>
                     </div>
                 </div>
